@@ -3,7 +3,7 @@ export default function Ouritems()
 {
     return(
         <>
-       
+<div className="global-container">
 <table>
   <tr>
     <th>s.no</th>
@@ -41,6 +41,7 @@ export default function Ouritems()
     <td>Italy</td>
   </tr>
 </table>
+</div>
         </>
     )
 }

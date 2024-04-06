@@ -3,7 +3,6 @@ export default function Login()
 {
     return (
         <>
-    <div class="pt-5">  
   <div class="global-container">  
     <div class="card login-form">  
     <div class="card-body">  
@@ -28,7 +27,6 @@ export default function Login()
         </div>  
     </div>  
 </div>  
-</div> 
 </div> 
 </> 
     )
