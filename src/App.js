@@ -24,7 +24,7 @@ function App() {
      <Routes>
          <Route path="/" element={<About />}></Route>
            <Route path="/More" element={<More />}></Route>
-           <Route path="/Ouritems" element={<Ouritems />}></Route>
+           <Route path="/Ouritems" element={<Ouritems />}> </Route>
      </Routes>
     <Footer />
      </BrowserRouter>
