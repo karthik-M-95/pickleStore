@@ -1,34 +1,66 @@
 import './Str.css'
+import Mango from './Mango.js';
+import { Outlet, Link } from "react-router-dom";
+
 export default function Ouritems()
 {
     return(
-
 <>
-<div style={{display:'flex'}}><img src="https://bing.com/th?id=OSK.058506e365ca9eaabe2c6ed36bc849bf" style={{width:300 ,height:200 ,marginTop:60,marginLeft:110}}>
-</img>
-<h1 style={{marginTop:60,marginLeft:40}}>MangoPickle              
-  <h1 style={{marginLeft:20}}>(Aavakaya)</h1></h1>
-  <br></br>
-  
+<div style={{display:'flex',marginLeft:30,alignItems:'center',gap:65,marginRight:30}}>
+  <h1 style={{fontSize:30,width:80}}>Veg Pickles</h1>
+<div className="card" style={{width: 200}}>
+  <img src="https://www.sharmispassions.com/wp-content/uploads/2021/11/instant-mango-pickle1.jpg" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">MangoPickle</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
 </div>
-
-<div style={{marginLeft:450,marginTop:-50}}>
-<p>Made from authentic Indian spices</p>
-<form action="">
-<input type='radio' id="250gm" name="fav_language" value="250gm"></input><label htmlFor="250gm" style={{marginLeft:5}}><div></div><img src="https://bing.com/th?id=OSK.058506e365ca9eaabe2c6ed36bc849bf"style={{width:60,height:40 ,marginTop:-2,marginLeft:2}}></img><span style={{marginLeft:5}}>Mango Pickle (Avakaya) – 250gm</span></label><br></br><br></br>
-<input type='radio' id="500gm" name="fav_language" value="500gm"></input><label htmlFor="500gm" style={{marginLeft:5}}><div></div><img src="https://bing.com/th?id=OSK.058506e365ca9eaabe2c6ed36bc849bf"style={{width:60,height:40 ,marginTop:-2,marginLeft:2}}></img><span style={{marginLeft:5}}>Mango Pickle (Avakaya) – 500gm</span></label><br></br><br></br>
-<input type='radio' id="1kg" name="fav_language" value="1kg"></input><label htmlFor="1kg" style={{marginLeft:5}}><div></div><img src="https://bing.com/th?id=OSK.058506e365ca9eaabe2c6ed36bc849bf"style={{width:60,height:40 ,marginTop:-2,marginLeft:2}}></img><span style={{marginLeft:5}}>Mango Pickle (Avakaya) – 1kg</span></label><br></br><br></br>
-
-<div style={{display:'flex'}}>
-<input type="number" id="quantity" name="quantity" min="1" max="5" ></input>
-<button type="button" class="btn btn-success" style={{marginLeft:50}}>AddCart<i class="bi bi-chevron-compact-right"></i></button>
-<button type="button" class="btn btn-danger"style={{marginLeft:10}}>BuyNow<i class="bi bi-chevron-double-right"></i></button>
-
-  </div></form>
-<div>
-
+<div className="card" style={{width: 200}}>
+  <img src="https://i.ytimg.com/vi/S5fYbjBb0zs/maxresdefault.jpg" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">LemonPickle</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
 </div>
-  
-</div></>
+<div className="card" style={{width: 200}}>
+<img src="https://i.ytimg.com/vi/S5fYbjBb0zs/maxresdefault.jpg" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
+</div>
+</div>
+<br></br><br></br><br></br>
+<div style={{display:'flex',marginLeft:30,alignItems:'center',gap:65,marginRight:30}}>
+  <h1 style={{fontSize:30, width:80}}>Non-Veg Pickles</h1><div className="card" style={{width: 200}}>
+  <img src="https://bing.com/th?id=OSK.21649cb04dd76aede8f8807355171b50" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
+</div>
+<div className="card" style={{width: 200}}>
+<img src="https://bing.com/th?id=OSK.21649cb04dd76aede8f8807355171b50" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
+</div>
+<div className="card" style={{width: 200}}>
+<img src="https://bing.com/th?id=OSK.21649cb04dd76aede8f8807355171b50" style={{height:200}} class="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <Link to="/Ouritems/mango" class="btn btn-primary">View Product</Link>
+  </div>
+</div>
+</div>
+</>
+
     )
 }

@@ -3,7 +3,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Footer(){
     return(
        <>
-      <footer class="bg-body-tertiary text-center text-white" style={{display:'flex',justifyContent:'center'}}>
+      <div className="container-fluid">
+      <footer class="bg-body-primary text-center text-white" style={{display:'flex',justifyContent:'center'}}>
       <div style={{marginRight:250}}>
         <div><h2 className='text-secondary'>Follow us</h2></div>
         <div> <div class="container p-4 pb-0">
@@ -44,6 +45,7 @@ export default function Footer(){
 
 </footer>
 
+</div>
        </>
     )
 }
