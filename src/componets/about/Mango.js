@@ -1,4 +1,6 @@
-import './Str.css'
+import './Str.css';
+import { Outlet, Link } from "react-router-dom";
+
 export default function Mango()
 {
     return(
@@ -22,7 +24,7 @@ export default function Mango()
 <div style={{display:'flex'}}>
 <input type="number" id="quantity" name="quantity" min="1" max="5" ></input>
 <button type="button" class="btn btn-success" style={{marginLeft:50}}>AddCart<i class="bi bi-chevron-compact-right"></i></button>
-<button type="button" class="btn btn-danger"style={{marginLeft:10}}>BuyNow<i class="bi bi-chevron-double-right"></i></button>
+<Link to="/Ouritems/mango/billing"><button type="button" class="btn btn-danger"style={{marginLeft:10}}>BuyNow<i class="bi bi-chevron-double-right"></i></button></Link>
 
   </div></form>
 <div>
