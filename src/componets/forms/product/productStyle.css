@@ -1,0 +1,82 @@
+.itemBase{
+    height: max-content;
+    margin: 50px;;
+}
+
+
+/* Item main div style */
+.productLevel1{
+    display:'flex';
+    margin-left:30;
+    /* align-items:'center'; */
+    gap:65;
+    margin-right:30;
+    background-color: burlywood;
+    
+    align-content: center;
+}
+
+.cardImage{
+    height: 250px;
+    
+}
+
+.card-description{
+    padding-top:5px;
+    font-style: italic;
+}
+.card-button{
+    margin-bottom: 1px;
+    position:relative;
+    bottom: 0px;
+  
+}
+
+.cardJusitfy{
+    justify-content: center;
+    align-self: center;
+    display:flex;
+    padding: 5px;
+    font-style: italic;
+    font-size: medium;
+    
+}
+
+.cardBorder{
+    
+    border-radius: 15px;
+    border-color: black;
+    margin-top: 3rem;
+    position: relative;
+
+}
+
+.carousel-cover{
+    border-radius: 5px;
+    border: 10px;
+    border-color: chocolate;
+}
+
+.viewProduct{
+    /* height: 80vh; */
+    margin:20px;
+    padding: 20px;
+    font-style: italic;
+    font-family: cursive;
+    justify-content: center;
+}
+
+#viewProductImage{
+    width:15rem;
+    padding-top:2rem;
+    align-self: center;
+    height:50%;
+}
+
+.about-us{
+    min-height: 50vh;
+    font-family: cursive;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
