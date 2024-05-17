@@ -17,8 +17,8 @@ export default function MoreDetails()
               </address>
               </div>
          <div class="email and mobile number">
-            <p>Email:dgffj@gmail.com</p>
-            <p>conatct:657890398</p>
+            <p>Email:karthikappu1995@gmail.com</p>
+            <p>conatct:9663583504</p>
          </div>
 
         
