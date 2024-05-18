@@ -10,7 +10,7 @@ export default function NonVegProduct(){
     const [view, setView] = useState(window.innerWidth);
     const[data,setData]=useState([]);
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1024)
-    const [isTablet, setTablet] = useState(window.innerWidth > 750 && window.innerWidth < 1024)
+    const [isTablet, setTablet] = useState(window.innerWidth > 650 && window.innerWidth < 1024)
     const [isMobile, setMobile] = useState(window.innerWidth < 650)
  
     const updateMedia = () => {
