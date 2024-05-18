@@ -21,7 +21,7 @@ export default function ViewProduct(){
         })
         .catch(error=>console.log(error))
         
-    },[])
+    },[params.productId])
 
     useEffect(()=>{
         setProduct(item)

@@ -1,17 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ItemCard from "./ItemCard";
 import MobileView from "../view/MobileView";
-import TableleView from "../view/TabletView";
+import TabletView from "../view/TabletView";
 import DesktopView from "../view/DesktopView";
 
 export default function NonVegProduct(){
 
-    const [view, setView] = useState(window.innerWidth);
+    // const [view, setView] = useState(window.innerWidth);
     const[data,setData]=useState([]);
     const [isDesktop, setDesktop] = useState(window.innerWidth > 1024)
-    const [isTablet, setTablet] = useState(window.innerWidth > 650 && window.innerWidth < 1024)
-    const [isMobile, setMobile] = useState(window.innerWidth < 650)
+    const [isTablet, setTablet] = useState(window.innerWidth > 768 && window.innerWidth < 1024)
+    const [isMobile, setMobile] = useState(window.innerWidth < 768)
  
     const updateMedia = () => {
         setDesktop(window.innerWidth>1024);
@@ -22,10 +21,10 @@ export default function NonVegProduct(){
     useEffect(() => {
         window.addEventListener('resize', updateMedia)
         return () => window.removeEventListener('resize', updateMedia)
-    }, [window.innerWidth])
+    }, [])
     
     
-    useEffect(() => {}, [view]);
+    // useEffect(() => {}, []);
 
     useEffect(()=>{
         axios.get('http://localhost:4000/products').then((res)=>{
@@ -48,7 +47,7 @@ export default function NonVegProduct(){
         <div className="carousel-inner">
         <div>
             {isMobile && <MobileView id={'non-veg'}  val={data}/>}
-            {isTablet && <TableleView id={'non-veg'}  val={data} /> }
+            {isTablet && <TabletView id={'non-veg'}  val={data} /> }
             {isDesktop && <DesktopView id={'non-veg'}  val={data} />}
         </div>
 

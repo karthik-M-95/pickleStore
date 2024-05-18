@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './nav.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 export default function Footer(){
     return(

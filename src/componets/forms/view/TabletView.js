@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
+// import { useState } from "react"
 import ItemCard from "../product/ItemCard"
 
 const Carousel=(props)=>{
-    const[data, setData]=useState(props.val)
+    // const[data, setData]=useState(props.val)
     let prodarr=props.val;
-    // console.log(prodarr)
+    
     return(
         <>
         
@@ -22,12 +22,13 @@ const Carousel=(props)=>{
 }
 
 
-export default function TableleView(props){
+export default function TabletView(props){
 
-    const[data, setData]=useState(props.val);
-    useEffect(()=>{
-        setData(props.val)
-    },[props])
+    var data=props.val;
+    // const[data, setData]=useState(props.val);
+    // useEffect(()=>{
+    //     setData(props.val)
+    // },[props])
     
   
     return(
