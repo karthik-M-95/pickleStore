@@ -1,8 +1,8 @@
-import { useState } from "react"
+
 import ItemCard from "../product/ItemCard"
 
 const Carousel=(props)=>{
-    var data =useState(props.val)
+    var data =(props.val)
     return(
         <>
             <div className="carousel-item">
@@ -19,7 +19,6 @@ export default function MobileView(props){
 
     var data=props.val;
     // const[data, setData]=useState();
-    
     // useEffect(()=>{
     //     setData(props.val);
     // },[props])

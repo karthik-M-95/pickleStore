@@ -9,23 +9,18 @@ import './productStyle.css'
 export default function ViewProduct(){
 
     let params=useParams();
-    const[item,setItem]=useState({});
     const[product,setProduct]=useState({});
     // const pageloaded=()=>{
     //     console.log('page reloaded')
     //     setLoadData(!loadData)
     // }
     useEffect(()=>{
-        axios.get(`http://localhost:4000/products?id=${params.productId}`).then(res=>{
-            setItem(res.data[0]);  
+        axios.get(`https://karthik-fake-repository.onrender.com/products/${params.productId}`).then(res=>{
+            setProduct(res.data); 
         })
         .catch(error=>console.log(error))
         
     },[params.productId])
-
-    useEffect(()=>{
-        setProduct(item)
-    },[item])
 
 
     return(

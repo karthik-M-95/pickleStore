@@ -8,13 +8,13 @@ export default function NonVegProduct(){
 
     // const [view, setView] = useState(window.innerWidth);
     const[data,setData]=useState([]);
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 1024)
-    const [isTablet, setTablet] = useState(window.innerWidth > 768 && window.innerWidth < 1024)
+    const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024)
+    const [isTablet, setTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024)
     const [isMobile, setMobile] = useState(window.innerWidth < 768)
  
     const updateMedia = () => {
-        setDesktop(window.innerWidth>1024);
-        setTablet(window.innerWidth>768 && window.innerWidth<1024);
+        setDesktop(window.innerWidth>=1024);
+        setTablet(window.innerWidth>=768 && window.innerWidth<1024);
         setMobile(window.innerWidth <768);
  
     }
@@ -27,7 +27,7 @@ export default function NonVegProduct(){
     // useEffect(() => {}, []);
 
     useEffect(()=>{
-        axios.get('http://localhost:4000/products').then((res)=>{
+        axios.get('https://karthik-fake-repository.onrender.com/products').then((res)=>{
             let filteredProduct=res.data.filter((x)=>x.productCategory==='non-veg')
             setData(filteredProduct)
         }).catch(error=>console.log(error))
