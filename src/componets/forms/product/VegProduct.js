@@ -7,7 +7,6 @@ import DesktopView from "../view/DesktopView";
 
 
 export default function VegProduct(){
-    // const [view, setView] = useState(window.innerWidth);
     const[data,setData]=useState([]);
     const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024)
     const [isTablet, setTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024)

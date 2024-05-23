@@ -18,11 +18,7 @@ const Carousel=(props)=>{
 export default function MobileView(props){
 
     var data=props.val;
-    // const[data, setData]=useState();
-    // useEffect(()=>{
-    //     setData(props.val);
-    // },[props])
-
+    
    
     return(
         <>

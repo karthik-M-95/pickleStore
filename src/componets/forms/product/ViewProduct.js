@@ -10,10 +10,7 @@ export default function ViewProduct(){
 
     let params=useParams();
     const[product,setProduct]=useState({});
-    // const pageloaded=()=>{
-    //     console.log('page reloaded')
-    //     setLoadData(!loadData)
-    // }
+    
     useEffect(()=>{
         axios.get(`https://karthik-fake-repository.onrender.com/products/${params.productId}`).then(res=>{
             setProduct(res.data); 
@@ -30,11 +27,11 @@ export default function ViewProduct(){
 
             <Card  style={{ width: '22rem' }}>
                 <Card.Header>
-                    <Card.Title className="cardJusitfy">{product.productName}</Card.Title>
+                    {<Card.Title className="cardJusitfy">{product.productName}</Card.Title> }
                 </Card.Header>
-                <Card.Img id="viewProductImage" variant="top" alt={product.productName} src={product.productUrl} />
-                <Card.Body>
-                    
+                <img class="card-img-top" src={product.productUrl} alt="Card image cap" className='rounded' style={{height:250}}/>
+
+                <Card.Body>   
                     <Card.Text>
                    {product.productDescription}
                     </Card.Text>
@@ -42,22 +39,15 @@ export default function ViewProduct(){
                 <ListGroup className="list-group-flush">
                     <ListGroup.Item>1/2 kg : {product.productPrice/2 +10} Rs </ListGroup.Item>
                     <ListGroup.Item>1 kg : {product.productPrice} Rs</ListGroup.Item>
-                    {/* <ListGroup.Item>Vestibulum at eros</ListGroup.Item> */}
                 </ListGroup>
                 <Card.Body>
                 <Link to='https://wa.me/8296591085'> <Button className="w-100 btn btn-lg " value="Order" variant="primary">Order</Button>
                 </Link>
-                {/* <Button variant="primary">Go somewhere</Button> */}
                     
                 </Card.Body>
             </Card>
 
-                {/* <div className="col-sm-6">
-                    <img src={product.productUrl} class="img-thumbnail cardImage" alt={product.productName} />
-                </div>
-                <div className="col-sm-6">
-                <p>Hello</p>
-                </div> */}
+              
 
             </div>
 
