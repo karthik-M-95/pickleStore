@@ -10,7 +10,7 @@ export default function Navigator(){
     return(
         <div>
             <div className="bg-secondary" style={{ height:50}}>
-            <marquee style={{color:'white', marginTop:8}}> welcome to Andhra spicy pickle store .</marquee>
+            {/* <marquee style={{color:'white', marginTop:8}}> welcome to Andhra spicy pickle store .</marquee> */}
             </div>
                 <Navbar  collapseOnSelect expand="sm" bg="pink" data-bs-theme="light" style={{justifyContent:'center'}}>
                 <Container className="nav-style nav-align nav-font" style={{justifyContent:'center'}} >

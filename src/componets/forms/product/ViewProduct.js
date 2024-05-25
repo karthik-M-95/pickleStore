@@ -42,7 +42,7 @@ export default function ViewProduct(){
                 <Card.Header>
                     {<Card.Title className="cardJusitfy">{product.productName}</Card.Title> }
                 </Card.Header>
-                <img className="card-img-top" src={product.productUrl} alt="Card cap" className='rounded' style={{height:250}}/>
+                <img className="card-img-top rounded" src={product.productUrl} alt="Card cap"  style={{height:250}}/>
 
                 <Card.Body>   
                     <Card.Text>
