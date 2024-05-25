@@ -37,7 +37,7 @@ export default function ViewProduct(){
                     </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroup.Item>1/2 kg : {product.productPrice/2 +10} Rs </ListGroup.Item>
+                    <ListGroup.Item>1/2 kg : {Math.floor(product.productPrice/2) +10} Rs </ListGroup.Item>
                     <ListGroup.Item>1 kg : {product.productPrice} Rs</ListGroup.Item>
                 </ListGroup>
                 <Card.Body>

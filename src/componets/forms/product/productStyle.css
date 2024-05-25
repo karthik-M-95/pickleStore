@@ -37,7 +37,7 @@
     align-self: center;
     display:flex;
     padding: 5px;
-    font-style: italic;
+    font-style: normal;
     font-size: medium;
     
 }
@@ -62,7 +62,7 @@
     margin:20px;
     padding: 20px;
     font-style: italic;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     justify-content: center;
 }
 

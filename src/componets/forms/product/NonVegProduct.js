@@ -4,10 +4,10 @@ import MobileView from "../view/MobileView";
 import TabletView from "../view/TabletView";
 import DesktopView from "../view/DesktopView";
 
-export default function NonVegProduct(){
+export default function NonVegProduct(props){
 
-    // const [view, setView] = useState(window.innerWidth);
-    const[data,setData]=useState([]);
+
+    var data =props.product;
     const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024)
     const [isTablet, setTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024)
     const [isMobile, setMobile] = useState(window.innerWidth < 768)
@@ -24,19 +24,11 @@ export default function NonVegProduct(){
     }, [])
     
     
-    // useEffect(() => {}, []);
-
-    useEffect(()=>{
-        axios.get('https://karthik-fake-repository.onrender.com/products').then((res)=>{
-            let filteredProduct=res.data.filter((x)=>x.productCategory==='non-veg')
-            setData(filteredProduct)
-        }).catch(error=>console.log(error))
-                
-            },[])
+    
             
     return(
 
-        <>
+        <> { data &&
         <div className="itemBase">
             <div className="row carousel-cover">
                 <div className="col-sm-12  productLevel1">
@@ -64,7 +56,7 @@ export default function NonVegProduct(){
         
 
         </div>
-        </div>
+        </div> }
         </>
     )
 }

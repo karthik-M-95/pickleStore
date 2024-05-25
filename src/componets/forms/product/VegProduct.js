@@ -6,8 +6,8 @@ import DesktopView from "../view/DesktopView";
 
 
 
-export default function VegProduct(){
-    const[data,setData]=useState([]);
+export default function VegProduct(props){
+    var data = props.product;
     const [isDesktop, setDesktop] = useState(window.innerWidth >= 1024)
     const [isTablet, setTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024)
     const [isMobile, setMobile] = useState(window.innerWidth < 768)
@@ -18,23 +18,16 @@ export default function VegProduct(){
         setMobile(window.innerWidth <768);
  
     }
-    useEffect(()=>{
-        axios.get('https://karthik-fake-repository.onrender.com/products').then((res)=>{
-            let filteredProduct=res.data.filter((x)=>x.productCategory==='veg')
-            setData(filteredProduct)
-        }).catch(error=>console.log(error))
-    },[])
 
     useEffect(() => {
         window.addEventListener('resize', updateMedia)
         return () => window.removeEventListener('resize', updateMedia)
     }, [])
     
-    useEffect(() => {}, [data])
       
     return(
         <>
-        
+       { data && 
         <div className="itemBase">
             <div className="row carousel-cover">
                 <div className="col-sm-12  productLevel1">
@@ -69,6 +62,7 @@ export default function VegProduct(){
 }
         </div>
         </div>
+        }
         </>
     )
 }

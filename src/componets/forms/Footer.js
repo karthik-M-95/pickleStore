@@ -21,7 +21,7 @@ export default function Footer(){
                         </a> 
                         </Col>
                         <Col xs={2} sm={3}>
-                        <a href="https://wa.me/8296591085"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
+                        <a href="https://wa.me/9663583504"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
                         style={{backgroundColor: "#00ff00"}} role="button" btn-secondary='true'>
                             <i className="bi bi-whatsapp"></i>
                         </a>
@@ -38,13 +38,13 @@ export default function Footer(){
                     <Row  className='fontStyle'>
                         
                         <Col xs={2}>
-                        <a href="mailto:webmaster@example.com"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
+                        <a href="mailto:andhraspicypickle@gmail.com"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
                                 style={{backgroundColor: "#ff0000"}} >
                                 <i className="bi bi-google"></i>
                                 </a>
                         </Col>
                         <Col xs={5}>
-                        <h5 className='fontStyle'> karthikappu1995@gmail.com</h5>
+                        <h5 className='fontStyle'> andhraspicypickle@gmail.com</h5>
                         </Col>
                     
                     </Row>
@@ -53,13 +53,13 @@ export default function Footer(){
                     <Row className='fontStyle'>
 
                         <Col xs={2}>
-                        <a href="#jfehe"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
+                        <a href="tel:966-358-3504" data-mdb-ripple-init className="btn text-white btn-floating m-1"
                                     style={{backgroundColor: "#000000"}} >
                                         <i className="bi bi-telephone"></i>
                                     </a>
                         </Col>
                         <Col xs={5}>
-                        <h5 className='fontStyle' > +91 8185813609, +91 9663583504</h5>
+                        <h5 className='fontStyle' > +91 8185813609, 9663583504</h5>
                         </Col>
                         
                         
