@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Button, Card, ListGroup } from "react-bootstrap";
+import { Button, Card, ListGroup, Spinner } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import './productStyle.css'
+
 
 
 
@@ -10,26 +11,38 @@ export default function ViewProduct(){
 
     let params=useParams();
     const[product,setProduct]=useState({});
+    const[loading,setLoading]=useState(true)
+
+    function Loader() {
+        return <>
+        <div className="about-us">
+        <Spinner animation="border" />
+        </div>      
+        </>
+      }
     
     useEffect(()=>{
         axios.get(`https://karthik-fake-repository.onrender.com/products/${params.productId}`).then(res=>{
             setProduct(res.data); 
+            setLoading(false)
         })
         .catch(error=>console.log(error))
         
     },[params.productId])
-
+    
 
     return(
         <>
-        <div  >
+        {loading ? <Loader /> :
+       
+        <div>
             <div  className="row viewProduct">
 
             <Card  style={{ width: '22rem' }}>
                 <Card.Header>
                     {<Card.Title className="cardJusitfy">{product.productName}</Card.Title> }
                 </Card.Header>
-                <img class="card-img-top" src={product.productUrl} alt="Card image cap" className='rounded' style={{height:250}}/>
+                <img className="card-img-top" src={product.productUrl} alt="Card cap" className='rounded' style={{height:250}}/>
 
                 <Card.Body>   
                     <Card.Text>
@@ -51,8 +64,8 @@ export default function ViewProduct(){
 
             </div>
 
-        </div>
-
+        </div> 
+}
         </>
     )
 

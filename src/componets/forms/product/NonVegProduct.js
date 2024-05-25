@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import { useEffect, useState } from "react";
 import MobileView from "../view/MobileView";
 import TabletView from "../view/TabletView";

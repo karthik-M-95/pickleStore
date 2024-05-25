@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import NonVegProduct from "./NonVegProduct";
 import VegProduct from "./VegProduct";
-import { Button, Spinner } from "react-bootstrap";
+import { Spinner } from "react-bootstrap";
 import axios from "axios";
 import './productStyle.css'
 
 
-function GrowExample() {
+function Loader() {
     return <>
     <div className="about-us">
     <Spinner animation="border" />
@@ -25,7 +25,7 @@ function ProductDisplay(props){
         setNonVegProduct(filteredProduct);
         filteredProduct=props.product.filter((x)=>x.productCategory==='veg')
         setVegProduct(filteredProduct)
-    },[])
+    },[props.product])
 
     return(
         <>
@@ -53,7 +53,7 @@ export default function Product(){
 
     return(
         <>  
-        {data.length ? <ProductDisplay product={data}/> : <GrowExample />}
+        {data.length ? <ProductDisplay product={data}/> : <Loader />}
           </>
         
     )

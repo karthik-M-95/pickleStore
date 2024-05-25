@@ -1,4 +1,4 @@
-import{Link, Outlet} from 'react-router-dom'
+import{Link} from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,13 +10,13 @@ export default function Navigator(){
     return(
         <div>
             <div className="bg-secondary" style={{ height:50}}>
-            <marquee style={{color:'white',marginTop:8}}> welcome to Andhra spicy pickle store .</marquee>
+            <marquee style={{color:'white', marginTop:8}}> welcome to Andhra spicy pickle store .</marquee>
             </div>
                 <Navbar  collapseOnSelect expand="sm" bg="pink" data-bs-theme="light" style={{justifyContent:'center'}}>
                 <Container className="nav-style nav-align nav-font" style={{justifyContent:'center'}} >
                     
                         <Nav style={{marginLeft:-30}}>             
-                        <Navbar.Brand href="#home"><img src="https://i.pinimg.com/originals/fe/90/a8/fe90a8637556b82d18b18938eaefbbdd.jpg" alt="" width="150" height="60" className="d-inline-block align-text-top" />
+                        <Navbar.Brand href="/"><img src="https://i.pinimg.com/originals/fe/90/a8/fe90a8637556b82d18b18938eaefbbdd.jpg" alt="" width="150" height="60" className="d-inline-block align-text-top" />
                         </Navbar.Brand>
                         </Nav>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

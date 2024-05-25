@@ -15,7 +15,7 @@ export default function Footer(){
                   <Row className='footer-justify'>
                         
                         <Col xs={2} sm={3}>
-                        <a href="https://www.instagram.com/andhra_spicy_pickles/" target='_blank' data-mdb-ripple-init className="btn text-white btn-floating m-1"
+                        <a href="https://www.instagram.com/andhra_spicy_pickles/" target='_blank' rel='noreferrer' data-mdb-ripple-init className="btn text-white btn-floating m-1"
                         style={{backgroundColor: "#FF0000"}} role="button" btn-secondary='true'>
                             <i className="bi bi-instagram"></i>
                         </a> 
