@@ -34,7 +34,7 @@ export default function MobileView(props){
                 </div>
                 
                 
-               {data && data.map((product)=>{
+               {data && data.slice(1,).map((product)=>{
                     return <Carousel val={product} />
                })}
             
