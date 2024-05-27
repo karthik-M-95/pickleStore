@@ -21,7 +21,7 @@ export default function Footer(){
                         </a> 
                         </Col>
                         <Col xs={2} sm={3}>
-                        <a href="https://wa.me/9663583504"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
+                        <a href="https://wa.me/8296591085"  data-mdb-ripple-init className="btn text-white btn-floating m-1"
                         style={{backgroundColor: "#00ff00"}} role="button" btn-secondary='true'>
                             <i className="bi bi-whatsapp"></i>
                         </a>
