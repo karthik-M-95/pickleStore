@@ -74,9 +74,8 @@ const prevStateTotalOrder = PreviousValue(data.totalOrder);
         handleClose();
         event.preventDefault();
         // ValidateOrders(data,setValid ,setError);
-
         if(formValid.userName===true && formValid.orderedOn===true && formValid.orderItem===true  ){
-            axios.post('http://localhost:4000/orders',data).then((response) => { 
+            axios.post('https://karthik-fake-repository.onrender.com/orders',data).then((response) => { 
             let newResponse={
                 "staus":true,
                 "response":'success',
