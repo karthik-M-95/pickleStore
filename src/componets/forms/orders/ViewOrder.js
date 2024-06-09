@@ -170,7 +170,7 @@ export function ViewOrder(props){
     var success=props.success;
     
     useEffect(()=>{
-        axios.get('http://localhost:4000/orders').then((response) => {
+        axios.get('https://karthik-fake-repository.onrender.com/orders').then((response) => {
             setState(response.data)
           }).catch(error=>{
             let newResponse={
