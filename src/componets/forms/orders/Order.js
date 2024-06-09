@@ -22,15 +22,18 @@ export default function Order(){
     }
 
     useEffect(()=>{
-        window.scrollTo(0, 0)
-        setTimeout(()=>(
+        if(success.message!==''){
+            window.scrollTo(0, 0)
+            setTimeout(()=>(
             setSuccess({
                 "status":'false',
                 "response":'',
                 "message":'',
-            })
-        ),5000);
-    },[success.response])
+                })
+            ),5000);
+        }
+    },[success.message])
+  
 
     const viewOrder=()=>{ setView(true) }
 
