@@ -31,10 +31,9 @@ export default function Order(){
                 "message":'',
                 })
             ),5000);
-         
         }
     },[success.message])
-        
+  
 
     const viewOrder=()=>{ setView(true) }
 
