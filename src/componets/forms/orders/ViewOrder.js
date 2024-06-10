@@ -18,7 +18,7 @@ const OrderCard=(props)=>{
             setload(true)
             let varName='orderDelivery'
             let newObj={...item,[varName]:true}
-            axios.put('http://localhost:4000/orders/'+item.id,newObj).then(response=>{
+            axios.put('https://karthik-fake-repository.onrender.com/orders/'+item.id,newObj).then(response=>{
                 setItem(response.data)
                 setload(false)
                 let newResponse={
@@ -44,7 +44,7 @@ const OrderCard=(props)=>{
             setload(true)
             let varName='orderPayment'
             let newObj={...item,[varName]:true}
-            axios.put('http://localhost:4000/orders/'+item.id,newObj).then(response=>{
+            axios.put('https://karthik-fake-repository.onrender.com/orders/'+item.id,newObj).then(response=>{
                 setItem(response.data)
                 setload(false)
                 let newResponse={
@@ -70,7 +70,7 @@ const OrderCard=(props)=>{
             setload(true)
             let varName='orderCompleted'
             let newObj={...item,[varName]:true}
-            axios.put('http://localhost:4000/orders/'+item.id,newObj).then(response=>{
+            axios.put('https://karthik-fake-repository.onrender.com/orders/'+item.id,newObj).then(response=>{
                 setItem(response.data)
                 setload(false)
                 let newResponse={
@@ -93,7 +93,7 @@ const OrderCard=(props)=>{
     }
     const deleteItem=()=>{
         setload(true)
-        axios.delete('http://localhost:4000/orders/'+item.id).then(response=>{ 
+        axios.delete('https://karthik-fake-repository.onrender.com/orders/'+item.id).then(response=>{ 
                 setItem('')
                 setload(false)
                 let newResponse={
